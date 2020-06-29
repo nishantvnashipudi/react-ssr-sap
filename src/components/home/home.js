@@ -77,6 +77,7 @@ function Home() {
   } else {
     return (
       <div className="container">
+        <div class="table-responsive">
       <table class="table table-striped">
         <thead className='table-header'>
           <tr>
@@ -96,12 +97,13 @@ function Home() {
             <td>
               <span className='open-news' onClick={() => redirectToNews(item.url)}>
               {`${item.title} (${item.url}) by ${item.author} ${new Date(item.created_at).getHours()} hours ago`}
-              </span>[{ <span onClick={() => onHide(item.objectID)}>hide</span>}]
+              </span>[{ <span className='open-news' onClick={() => onHide(item.objectID)}>hide</span>}]
             </td>
           </tr>)
           )}
         </tbody>
       </table>
+      </div>
       <div className='peg-prev-next'>
       <span className="peg-prev" onClick={() => getNewsStory(page - 1)} disabled={page < 1}>Previous</span>
       <span className="peg-delim">|</span>
