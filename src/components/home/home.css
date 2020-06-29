@@ -24,7 +24,9 @@ tbody{
 .upvote{
   cursor: pointer;
   color: #ff6600;
-  font-size:36px
+}
+.fo-size{
+  font-size: 2.7rem;
 }
 hr{
   margin-top: 3em;
