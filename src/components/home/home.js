@@ -77,8 +77,8 @@ function Home() {
   } else {
     return (
       <div className="container">
-        <div class="table-responsive">
-      <table class="table table-striped">
+        <div className="table-responsive">
+      <table className="table table-striped">
         <thead className='table-header'>
           <tr>
             <th>Comments</th>
