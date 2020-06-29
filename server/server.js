@@ -28,6 +28,6 @@ app.use("^/$", (req, res, next) => {
 
 app.use(express.static(path.resolve(__dirname, '..', 'build')))
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`App launched on ${PORT}`);
 });
