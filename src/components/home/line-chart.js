@@ -39,8 +39,17 @@ const LineChart = (props) => {
           height={400}
           options={{
             responsive: true,
-            maintainAspectRatio: false
-          }}
+            maintainAspectRatio: false,
+            scales: {
+              yAxes: [{
+                  ticks: {
+                      max: 7000,
+                      min: 0,
+                      stepSize: 1000
+                  }
+              }]
+          }
+        }}
         />
       </div>
     </div>
