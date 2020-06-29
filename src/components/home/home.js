@@ -44,7 +44,7 @@ function Home() {
   // get news stories call using fetch details from API
   const getNewsStory = pg => {
     showLoader();
-    fetch(`http://hn.algolia.com/api/v1/search?tags=story&page=${pg}&hitsPerPage=10`)
+    fetch(`https://hn.algolia.com/api/v1/search?tags=story&page=${pg}&hitsPerPage=10`)
       .then(res => res.json())
       .then(
         (result) => {
