@@ -93,7 +93,7 @@ function Home() {
           <tr key={item.objectID}>
             <td>{item.num_comments}</td>
             <td>{item.points}</td>
-            <td><span className='upvote ' onClick={() => handleUpvote(item.objectID)}><i class="fa fa-sort-up fo-size"></i></span></td>
+            <td><span className='upvote ' onClick={() => handleUpvote(item.objectID)}><i className="fa fa-sort-up fo-size"></i></span></td>
             <td>
               <span className='open-news' onClick={() => redirectToNews(item.url)}>
               {`${item.title}`}<span className='grey-out'> {`(${item.url})`} </span> by {`${item.author}`} <span className='grey-out'>
