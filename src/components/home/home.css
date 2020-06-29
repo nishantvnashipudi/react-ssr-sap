@@ -15,8 +15,13 @@ tbody{
 .open-news{
   cursor: pointer;
 }
+.open-news-hide{
+  cursor: pointer;
+  color: #ff6600;
+}
 .upvote{
   cursor: pointer;
+  color: #ff6600;
 }
 hr{
   margin-top: 3em;

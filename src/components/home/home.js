@@ -97,7 +97,7 @@ function Home() {
             <td>
               <span className='open-news' onClick={() => redirectToNews(item.url)}>
               {`${item.title} (${item.url}) by ${item.author} ${new Date(item.created_at).getHours()} hours ago`}
-              </span>[{ <span className='open-news' onClick={() => onHide(item.objectID)}>hide</span>}]
+              </span>[{ <span className='open-news-hide' onClick={() => onHide(item.objectID)}>hide</span>}]
             </td>
           </tr>)
           )}
