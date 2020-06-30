@@ -59,7 +59,8 @@ function Home() {
       setPage(page);
       setLocalStorage('currentActivePage', page);
     } else if(page >= 0 ){
-    fetch(`https://hn.algolia.com/api/v1/search?tags=story&page=${page}&hitsPerPage=10`)
+      // `https://hn.algolia.com/api/v1/search?tags=story&page=${page}&hitsPerPage=10`
+    fetch(`https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${page}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -142,6 +143,7 @@ function Home() {
       </div>
       <hr />
       <LineChart  data={items}/>
+      
       <hr />
     </div>
     );
