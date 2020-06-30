@@ -43,8 +43,8 @@ const LineChart = (props) => {
             scales: {
               yAxes: [{
                   ticks: {
-                      max: 6000,
-                      min: 3000,
+                      max: 6500,
+                      min: 0,
                       stepSize: 5,
                       maxTicksLimit:50
                   }
