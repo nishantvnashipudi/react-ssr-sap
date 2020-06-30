@@ -29,7 +29,6 @@ const LineChart = (props) => {
         };
     return chartData;
   };
-
   return (
     <div>
       <div>
