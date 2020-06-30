@@ -1,11 +1,9 @@
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 import { Line } from "react-chartjs-2";
 
 // line chart using chart.js node package
 const LineChart = (props) => {
   const [maxVote, setMaxVote] = useState(5);
-  const [items, setItems] = useState(props.data || []);
-  
   // chart package object preparing method
   const chart = () => {
     let votes = [];
