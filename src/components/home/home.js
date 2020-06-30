@@ -93,6 +93,7 @@ function Home() {
       getNewsStory(activePage || page)
     } else if(itemsExist && itemsExist.length) {
         setItems(itemsExist);
+        setPage(activePage || page);
     } 
   },[])
 
