@@ -77,3 +77,7 @@ hr{
     transform: rotate(360deg);
   }
 }
+.peg-disable{
+  pointer-events: none;
+  color: #ff6600;
+}
