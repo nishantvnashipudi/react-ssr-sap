@@ -27,16 +27,28 @@ tr:nth-child(even) {background-color: #e5e5df;}
 .open-news{
   cursor: pointer;
 }
+.open-news-title{
+  font-weight: 700;
+}
+.open-news-title:hover{
+  text-decoration: underline;
+}
+.grey-out:hover{
+  text-decoration: underline;
+}
 .open-news-hide{
   cursor: pointer;
   color: #ff6600;
+}
+.open-news-hide:hover{
+  text-decoration: underline;
 }
 .upvote{
   cursor: pointer;
   color: #90847c;
 }
 .fo-size{
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 hr{
   margin-top: 1.5em;

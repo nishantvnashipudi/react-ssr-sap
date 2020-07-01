@@ -106,7 +106,7 @@ function Home() {
       <div className="container">
         <div className="table-responsive">
       <table className="table table-striped">
-      <caption className='caption-text'>Hacker news stories listed in table with upvotes and links to stories, can upvote news stories, hide, read news by opening and compare votes line chart.</caption>
+      {/* <caption className='caption-text'>Hacker news stories listed in table with upvotes and links to stories, can upvote news stories, hide, read news by opening and compare votes line chart.</caption> */}
         <thead className='table-header'>
           <tr cope="row">
             <th scope="col" >Comments</th>
@@ -125,7 +125,7 @@ function Home() {
               <i className="fa fa-sort-up fo-size"></i></span></td>
             <td>
               <span className='open-news' onClick={() => redirectToNews(item.url)}>
-              {`${item.title}`}<span className='grey-out'> {`(${item.url})`}
+              <span className='open-news-title'> {`${item.title}`}</span><span className='grey-out'> {`(${item.url})`}
                </span> by {`${item.author}`} <span className='grey-out'>
                  {`${new Date(item.created_at).getHours()} hours ago`}</span>
               </span>[{ <span className='open-news-hide' 
