@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 import LineChart from './line-chart';
 import {setLocalStorage, getLocalStorage, removeLocalStorage, getIntLocalStorage} from '../../bussiness-logic/common';
+import LineCharts from './high-line-charts';
 
 // eslint-disable-next-line no-unused-vars
 let loader;
@@ -142,7 +143,8 @@ function Home() {
       <span className="peg-next" onClick={() => getNewsStory(page + 1)}>Next</span>
       </div>
       <hr />
-      <LineChart  data={items}/>
+      {/* <LineChart  data={items}/> */}
+      <LineCharts data={items}/>
       
       <hr />
     </div>
