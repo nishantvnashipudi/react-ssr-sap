@@ -3,13 +3,9 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 const LineCharts = (props) => {
-  const [maxVote, setMaxVote] = useState(5);
-  let options;
-
   const chart = () => {
     let votes = [];
     let id = [];
-    debugger
         for (const dataObj of props.data) {
           votes.push(parseInt(dataObj.points));
           id.push(parseInt(dataObj.objectID));
@@ -24,13 +20,18 @@ const LineCharts = (props) => {
           series: [
             {
               data: votes,
-              name: 'ID'
+              name: 'Votes'
             }
           ],
           xAxis: {
             categories: id,
-            name:'Votes'
+            name: 'ID'
           },
+          yAxis: {
+            title: {
+              text: "Votes"
+          }
+          }
         };
         return  <HighchartsReact
         highcharts={Highcharts}
