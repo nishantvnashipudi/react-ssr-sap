@@ -4,7 +4,7 @@ import './index.css';
 import Home from './components/home/home';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <Home />
   </React.StrictMode>,
